@@ -1,5 +1,16 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-const App: React.FC = () => <h2>Project Template</h2>;
+import GlobalStyle from './assets/styles/global';
+import Routes from './routes';
+
+const App: React.FC = () => (
+  <>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
+    <GlobalStyle />
+  </>
+);
 
 export default App;
